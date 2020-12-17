@@ -12,6 +12,7 @@ requests = "*"
 pandas-datareader = "*"
 matplotlib = "*"
 ipykernel = "*"
+dash = "*"
 
 [requires]
 python_version = "3.8"
