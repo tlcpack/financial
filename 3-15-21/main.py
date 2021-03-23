@@ -70,3 +70,24 @@ def dividends(stock):
 
 	for item in dividends:
 		print(item['paymentDate'] + ' :' + ' Dividend was :' + str(item['dividend']))
+
+while True:
+    comman = input('stock?')
+    command = comman.split(' ')[0] + ' '
+    stock = comman.split(' ')[1]
+    if comman == 'IS ' + stock :
+        income_statement(stock)
+    elif comman == 'profile ' + stock:
+        profile(stock)
+    elif comman == 'BS ' + stock:
+    	balance_sheet(stock)
+    elif comman == 'dividends ' + stock:
+    	dividends(stock)
+    elif comman == 'DCF ' + stock:
+    	valuation_dcf(stock)
+    elif comman == 'quit':
+        break
+    elif comman == 'prices ' + stock:
+        historical_prices(stock)
+    else:
+        print('Invalid Command.')
